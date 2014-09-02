@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         chessBoard.backgroundColor = UIColor.whiteColor()
         greenView.addSubview(chessBoard)
         
+        println("This is it: Michael Jackson's Last Tour")
         
         var squareWidth = chessBoard.frame.width / CGFloat(self.numRows)
         var squareHeight = chessBoard.frame.height / CGFloat(self.numCols)
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
