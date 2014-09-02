@@ -53,6 +53,13 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+        let hexaValue = 16 as Double
+        var divNumber = pow(hexaValue, 8) //this is 16^8
+        self.view.alpha = (CGFloat(arc4random()) / CGFloat(divNumber))
+        println(self.view.alpha)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
